@@ -8,6 +8,7 @@
         <li><router-link to="/" exact>Home</router-link></li>
         <li><router-link to="/GoodStuff" exact>Good Stuff</router-link></li>
         <li><router-link to="/About" exact>About the Projcet</router-link></li>
+        <li><router-link to="/DB" exact>DataBase Testing</router-link></li>
       </ul>
     </div>
   </nav>

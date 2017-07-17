@@ -5,7 +5,7 @@
 
   			<header>
 
-  				<h2>September</h2>
+  				<h2>July</h2>
 
   				<a class="btn-prev fontawesome-angle-left" href="#"></a>
   				<a class="btn-next fontawesome-angle-right" href="#"></a>
@@ -17,14 +17,14 @@
   				<thead>
 
   					<tr>
-
+              <td>Su</td>
   						<td>Mo</td>
   						<td>Tu</td>
   						<td>We</td>
   						<td>Th</td>
   						<td>Fr</td>
   						<td>Sa</td>
-  						<td>Su</td>
+
 
   					</tr>
 
