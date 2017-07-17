@@ -23,11 +23,12 @@ data () {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-/*#good-stuff {
+#good-stuff {
+
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-}*/
+}
 
 
 </style>

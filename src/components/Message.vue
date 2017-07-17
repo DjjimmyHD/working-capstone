@@ -24,7 +24,7 @@ data () {
 #message{
   height: 200px;
   width: 100vw;
-  background-color: black;
+  background-color: #F2EFEA;
 
 }
 

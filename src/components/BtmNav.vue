@@ -10,8 +10,9 @@
             </div>
           </div>
         </footer> -->
-        <v-card height="200px">
-    <v-bottom-nav absolute value="true" class="transparent #ff8a65 deep-orange lighten-2">
+        <div >
+      <v-card id="btm-nav" height="100px">
+    <v-bottom-nav absolute value="true" class="transparent">
       <v-btn flat dark class="white--text" >
         <span>Recents</span>
         <v-icon>history</v-icon>
@@ -26,6 +27,9 @@
       </v-btn>
     </v-bottom-nav>
   </v-card>
+
+
+</div>
 
 
 </template>
@@ -43,7 +47,10 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
+#btm-nav{
+  background-color: #FF8A65;
+}
 
 
 

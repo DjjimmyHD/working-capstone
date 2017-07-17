@@ -1,7 +1,7 @@
 <template>
   <div class="container">
 
-  		<div class="calendar">
+  		<div class="calendar elevation-5">
 
   			<header>
 
@@ -16,7 +16,7 @@
 
   				<thead>
 
-  					<tr>
+  					<tr class="days">
               <td>Su</td>
   						<td>Mo</td>
   						<td>Tu</td>
@@ -33,12 +33,13 @@
   				<tbody>
 
   					<tr>
+              <td class="prev-month">25</td>
   						<td class="prev-month">26</td>
   						<td class="prev-month">27</td>
   						<td class="prev-month">28</td>
   						<td class="prev-month">29</td>
   						<td class="prev-month">30</td>
-  						<td class="prev-month">31</td>
+
   						<td>1</td>
   					</tr>
   					<tr>
@@ -61,7 +62,7 @@
   					</tr>
   					<tr>
   						<td>16</td>
-  						<td>17</td>
+  						<td class="current-day">17</td>
   						<td>18</td>
   						<td>19</td>
   						<td>20</td>
@@ -70,7 +71,7 @@
   					</tr>
 
   					<tr>
-  						<td class="current-day event">23</td>
+  						<td class="event">23</td>
   						<td>24</td>
   						<td>25</td>
   						<td>26</td>
@@ -80,12 +81,13 @@
   					</tr>
   					<tr>
   						<td>30</td>
+              <td>31</td>
   						<td class="next-month">1</td>
   						<td class="next-month">2</td>
   						<td class="next-month">3</td>
   						<td class="next-month">4</td>
   						<td class="next-month">5</td>
-  						<td class="next-month">6</td>
+
   					</tr>
 
   				</tbody>
@@ -112,39 +114,15 @@ data () {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-/*a {
-	text-decoration: none;
-}
-
-h2 {
-	font-size: 2em;
-	line-height: 1.25em;
-	margin: .25em 0;
-}
-
-h3 {
-	font-size: 1.5em;
-	line-height: 1em;
-	margin: .33em 0;
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-.container {
-	height: 538px;
-	left: 50%;
-	margin: -255px 0 0 -245px;
-	position: absolute;
-	top: 50%;
-	width: 510px;
-}*/
 
 /* ---------- CALENDAR ---------- */
 
-/*.calendar {
+h2,.days{
+  color: #FF8A65;
+
+}
+.calendar {
+  background-color: #F2EFEA;
 	text-align: center;
 }
 
@@ -162,11 +140,11 @@ table {
 }
 
 .calendar tbody {
-	color: #7c8a95;
+	color: #FF8A65;
 }
 
 .calendar tbody td:hover {
-	border: 2px solid #00addf;
+	border: 2px solid #B4EDD2;
 }
 
 .calendar td {
@@ -190,7 +168,7 @@ table {
 }
 
 .current-day {
-	background: #00addf;
+	background: #B4EDD2;
 	color: #f9f9f9;
 }
 
@@ -200,7 +178,7 @@ table {
 }
 
 .event:after {
-	background: #00addf;
+	background: #B4EDD2;
 	border-radius: 50%;
 	bottom: .5em;
 	display: block;
@@ -208,7 +186,7 @@ table {
 	height: .5em;
 	left: 50%;
 	margin: -.25em 0 0 -.25em;
-	position: absolute;
+	position: relative;
 	width: .5em;
 }
 
@@ -242,5 +220,5 @@ table {
 
 .btn-next {
 	right: 6em;
-}*/
+}
 </style>
