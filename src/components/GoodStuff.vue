@@ -1,8 +1,9 @@
 <template>
 
 <div id="good-stuff">
+  <h1><small>Good Stuff Landing Page</small></h1>
   <message></message>
-<calendar></calendar>
+  <calendar></calendar>
 </div>
 </template>
 
@@ -22,11 +23,11 @@ data () {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-#good-stuff {
+/*#good-stuff {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-}
+}*/
 
 
 </style>

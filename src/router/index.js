@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Landing from '@/components/Landing'
 import GoodStuff from '@/components/GoodStuff'
+import About from '@/components/About'
 
 
 
@@ -18,6 +19,11 @@ export default new Router({
       path: '/GoodStuff',
       name: 'good-stuff',
       component: GoodStuff
+    },
+    {
+      path: '/About',
+      name: 'about',
+      component: About
     }
 
   ]

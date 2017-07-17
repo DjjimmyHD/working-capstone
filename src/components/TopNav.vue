@@ -1,12 +1,13 @@
   <template>
 
 <nav>
-    <div class="nav-wrapper #311b92 deep-purple darken-4">
+    <div class="nav-wrapper #ff8a65 deep-orange lighten-2">
       <!-- <a href="#" class="brand-logo center">Logo</a> -->
       <h1 class="brand-logo center">The Good Stuff</h1>
       <ul>
-        <li><router-link to="/" exact>Landing Page</router-link></li>
+        <li><router-link to="/" exact>Home</router-link></li>
         <li><router-link to="/GoodStuff" exact>Good Stuff</router-link></li>
+        <li><router-link to="/About" exact>About the Projcet</router-link></li>
       </ul>
     </div>
   </nav>
@@ -24,7 +25,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style >
 
 
 </style>

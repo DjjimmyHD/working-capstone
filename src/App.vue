@@ -2,9 +2,7 @@
   <div id="app">
 
     <top-nav></top-nav>
-    <v-layout>
     <router-view></router-view>
-    </v-layout>
     <btm-nav></btm-nav>
 
   </div>
