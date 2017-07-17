@@ -1,8 +1,8 @@
   <template>
     <nav>
        <ul>
-           <li><router-link to="/landing" exact>Blog</router-link></li>
-           <li><router-link to="/" exact>Add a new blog</router-link></li>
+           <li><router-link to="/GoodStuff" exact>Good Stuff</router-link></li>
+           <li><router-link to="/" exact>Landing Page</router-link></li>
        </ul>
    </nav>
   </template>
