@@ -1,10 +1,15 @@
   <template>
-    <nav>
-       <ul>
-           <li><router-link to="/GoodStuff" exact>Good Stuff</router-link></li>
-           <li><router-link to="/" exact>Landing Page</router-link></li>
-       </ul>
-   </nav>
+
+<nav>
+    <div class="nav-wrapper #311b92 deep-purple darken-4">
+      <!-- <a href="#" class="brand-logo center">Logo</a> -->
+      <h1 class="brand-logo center">The Good Stuff</h1>
+      <ul>
+        <li><router-link to="/" exact>Landing Page</router-link></li>
+        <li><router-link to="/GoodStuff" exact>Good Stuff</router-link></li>
+      </ul>
+    </div>
+  </nav>
   </template>
 
 <script>
@@ -20,30 +25,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-ul{
-    list-style-type: none;
-    text-align: center;
-    margin: 0;
-}
-li{
-    display: inline-block;
-    margin: 0 10px;
-}
-a{
-    color: #fff;
-    text-decoration: none;
-    padding: 6px 8px;
-    border-radius: 10px;
-}
-nav{
-    background: #444;
-    padding: 14px 0;
-    margin-bottom: 40px;
-}
-.router-link-active{
-    background: #eee;
-    color: #444;
-}
 
 
 </style>

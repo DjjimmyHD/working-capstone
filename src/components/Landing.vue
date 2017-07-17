@@ -38,6 +38,11 @@ data () {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+#landing {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
 
 
 </style>

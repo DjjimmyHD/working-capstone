@@ -1,10 +1,16 @@
 <template>
-<div>
-  <footer>
-        <p>Copyright 2017</p>
-    </footer>
 
-  </div>
+
+  <footer class="page-footer #311b92 deep-purple darken-4">
+        
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
+
 </template>
 
 
@@ -22,14 +28,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
-footer{
-    background: #222;
-    padding: 6px;
-}
-p{
-        color: lightgreen;
-        text-align: center;
-}
+
 
 
 </style>

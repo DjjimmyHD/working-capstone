@@ -1,15 +1,17 @@
 <template>
-  <div id="good-stuff">
 
-<h1>demo</h1>
-
-
-  </div>
+<div id="good-stuff">
+  <message></message>
+<calendar></calendar>
+</div>
 </template>
 
 <script>
+import Calendar from './Calendar'
+import Message from './Message'
 export default {
 name: 'good-stuff',
+components:{Calendar,Message},
 data () {
   return {
 
@@ -19,7 +21,12 @@ data () {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
+#good-stuff {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
 
 
 </style>

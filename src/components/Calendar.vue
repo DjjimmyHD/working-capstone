@@ -1,51 +1,100 @@
 <template>
-  <div class="table-divs" id="calendarBody">
-    <div class="row">
-      <div class="day">0</div>
-      <div class="day">1</div>
-      <div class="day">2</div>
-      <div class="day">3</div>
-      <div class="day">4</div>
-      <div class="day">5</div>
-      <div class="day">6</div>
-    </div>
-    <div class="row">
-      <div class="day">7</div>
-      <div class="day">8</div>
-      <div class="day">9</div>
-      <div class="day">10</div>
-      <div class="day">11</div>
-      <div class="day">12</div>
-      <div class="day">13</div>
-    </div>
-    <div class="row">
-      <div class="day">14</div>
-      <div class="day">15</div>
-      <div class="day">16</div>
-      <div class="day">17</div>
-      <div class="day">18</div>
-      <div class="day">19</div>
-      <div class="day">20</div>
-    </div>
-    <div class="row">
-      <div class="day">21</div>
-      <div class="day">22</div>
-      <div class="day">23</div>
-      <div class="day">24</div>
-      <div class="day">25</div>
-      <div class="day">26</div>
-      <div class="day">27</div>
-    </div>
-    <div class="row">
-      <div class="day">28</div>
-      <div class="day">29</div>
-      <div class="day">30</div>
-      <div class="day">31</div>
-      <div class="day">32</div>
-      <div class="day">33</div>
-      <div class="day">34</div>
-    </div>
-  </div>
+  <div class="container">
+
+  		<div class="calendar">
+
+  			<header>
+
+  				<h2>September</h2>
+
+  				<a class="btn-prev fontawesome-angle-left" href="#"></a>
+  				<a class="btn-next fontawesome-angle-right" href="#"></a>
+
+  			</header>
+
+  			<table>
+
+  				<thead>
+
+  					<tr>
+
+  						<td>Mo</td>
+  						<td>Tu</td>
+  						<td>We</td>
+  						<td>Th</td>
+  						<td>Fr</td>
+  						<td>Sa</td>
+  						<td>Su</td>
+
+  					</tr>
+
+  				</thead>
+
+  				<tbody>
+
+  					<tr>
+  						<td class="prev-month">26</td>
+  						<td class="prev-month">27</td>
+  						<td class="prev-month">28</td>
+  						<td class="prev-month">29</td>
+  						<td class="prev-month">30</td>
+  						<td class="prev-month">31</td>
+  						<td>1</td>
+  					</tr>
+  					<tr>
+  						<td>2</td>
+  						<td>3</td>
+  						<td>4</td>
+  						<td>5</td>
+  						<td>6</td>
+  						<td>7</td>
+  						<td>8</td>
+  					</tr>
+  					<tr>
+  						<td>9</td>
+  						<td class="event">10</td>
+  						<td>11</td>
+  						<td>12</td>
+  						<td>13</td>
+  						<td>14</td>
+  						<td>15</td>
+  					</tr>
+  					<tr>
+  						<td>16</td>
+  						<td>17</td>
+  						<td>18</td>
+  						<td>19</td>
+  						<td>20</td>
+  						<td class="event">21</td>
+  						<td>22</td>
+  					</tr>
+
+  					<tr>
+  						<td class="current-day event">23</td>
+  						<td>24</td>
+  						<td>25</td>
+  						<td>26</td>
+  						<td>27</td>
+  						<td>28</td>
+  						<td>29</td>
+  					</tr>
+  					<tr>
+  						<td>30</td>
+  						<td class="next-month">1</td>
+  						<td class="next-month">2</td>
+  						<td class="next-month">3</td>
+  						<td class="next-month">4</td>
+  						<td class="next-month">5</td>
+  						<td class="next-month">6</td>
+  					</tr>
+
+  				</tbody>
+
+  			</table>
+
+  		</div> <!-- end calendar -->
+
+  	</div> <!-- end container -->
 </template>
 
 <script>
@@ -63,60 +112,135 @@ data () {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+/*a {
+	text-decoration: none;
+}
+
 h2 {
-  clear: left;
+	font-size: 2em;
+	line-height: 1.25em;
+	margin: .25em 0;
 }
 
-/* All 'day' elements have these styes in common */
-.day {
-  height: 97px;
-  background: #cccccc;
-  border: 1px solid #000;
-  box-sizing: border-box;
+h3 {
+	font-size: 1.5em;
+	line-height: 1em;
+	margin: .33em 0;
 }
 
-/* use display:table and ilk */
-.table-divs {
-  display: table;
-  width:100%;
-  max-width: 97px * 7;
-
-  .row {
-    display:table-row;
-  }
-
-  .day {
-    display: table-cell;
-    width: 97px;
-  }
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-/* float and wrap divs */
-.floated-divs {
-  .day {
-    width: (100% / 7);
-    max-width: 97px;
-    float: left;
+.container {
+	height: 538px;
+	left: 50%;
+	margin: -255px 0 0 -245px;
+	position: absolute;
+	top: 50%;
+	width: 510px;
+}*/
 
-    &:nth-child(7n+1) {
-      clear:left;
-    }
-  }
+/* ---------- CALENDAR ---------- */
+
+/*.calendar {
+	text-align: center;
 }
 
-/* flexbox! But <100% browser support (IE old) */
-.flex-divs {
-  width:100%;
-  max-width: 97px * 7;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-
-  .day {
-    display: flex;
-    flex: 0 1 (100% / 7);
-  }
+.calendar header {
+	position: relative;
 }
 
+.calendar h2 {
+	text-transform: uppercase;
+}
+
+.calendar thead {
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.calendar tbody {
+	color: #7c8a95;
+}
+
+.calendar tbody td:hover {
+	border: 2px solid #00addf;
+}
+
+.calendar td {
+	border: 2px solid transparent;
+	border-radius: 50%;
+	display: inline-block;
+	height: 4em;
+	line-height: 4em;
+	text-align: center;
+	width: 4em;
+}
+
+.calendar .prev-month,
+.calendar .next-month {
+	color: #cbd1d2;
+}
+
+.calendar .prev-month:hover,
+.calendar .next-month:hover {
+	border: 2px solid #cbd1d2;
+}
+
+.current-day {
+	background: #00addf;
+	color: #f9f9f9;
+}
+
+.event {
+	cursor: pointer;
+	position: relative;
+}
+
+.event:after {
+	background: #00addf;
+	border-radius: 50%;
+	bottom: .5em;
+	display: block;
+	content: '';
+	height: .5em;
+	left: 50%;
+	margin: -.25em 0 0 -.25em;
+	position: absolute;
+	width: .5em;
+}
+
+.event.current-day:after {
+	background: #f9f9f9;
+}
+
+.btn-prev,
+.btn-next {
+	border: 2px solid #cbd1d2;
+	border-radius: 50%;
+	color: #cbd1d2;
+	height: 2em;
+	font-size: .75em;
+	line-height: 2em;
+	margin: -1em;
+	position: absolute;
+	top: 50%;
+	width: 2em;
+}
+
+.btn-prev:hover,
+.btn-next:hover {
+	background: #cbd1d2;
+	color: #f9f9f9;
+}
+
+.btn-prev {
+	left: 6em;
+}
+
+.btn-next {
+	right: 6em;
+}*/
 </style>
